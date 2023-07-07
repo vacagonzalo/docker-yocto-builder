@@ -34,16 +34,16 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y -q \
   zstd
 
 # Here are the packages needed to build Project documentation manuals:
-RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y -q \
-  inkscape \
-  install \
-  make \
-  pip3 \
-  python3-pip \
-  pyyaml \
-  sphinx \
-  sphinx_rtd_theme \
-  texlive-latex-extra
+# RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y -q \
+#   inkscape \
+#   install \
+#   make \
+#   pip3 \
+#   python3-pip \
+#   pyyaml \
+#   sphinx \
+#   sphinx_rtd_theme \
+#   texlive-latex-extra
 
 RUN locale-gen en_US.UTF-8 && update-locale
 
