@@ -13,3 +13,8 @@ In compliance of the [Yocto system requirements](https://docs.yoctoproject.org/r
 1. Run the `docker_build.sh` script.
 2. Export a workspace (`export WORKSPACE=some/folder/to/work/on`).
 3. Run the `create_container.sh`
+
+## Notes
+
+The Yocto build process consumes lots of RAM.
+There is a `RESERVED_MEMORY` variable in the `create_container.sh` script, by default its value is 4 (Gigabytes).
